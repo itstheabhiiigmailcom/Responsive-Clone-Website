@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Clone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <picture>
+            <source srcset="./Images/logo.png" media="(max-width: 768px)" />
+            <img src="./Images/logo.png" alt="TEAL Logo" class="logo-img" />
+          </picture>
+        </div>
+        <ul class="navbar-menu">
+          <li class="dropdown">
+            <button class="dropbtn">Solutions</button>
+            <div class="dropdown-content">
+              <a href="#">Black Widow</a>
+              <a href="#">Teal 2</a>
+              <a href="#">Controllers</a>
+              <a href="#">Futures Initiative</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <button class="dropbtn">Use Cases</button>
+            <div class="dropdown-content">
+              <a href="#">Defence</a>
+              <a href="#">Firefighting</a>
+              <a href="#">Public Safety</a>
+              <a href="#">Commercial</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <button class="dropbtn">Company</button>
+            <div class="dropdown-content">
+              <a href="#">About</a>
+              <a href="#">Leadership</a>
+              <a href="#">Events</a>
+              <a href="#">Careers</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <button class="dropbtn">Media</button>
+            <div class="dropdown-content">
+              <a href="#">Press Releases</a>
+            </div>
+          </li>
+          <li><button class="support dropbtn dropdown">Support</button></li>
+          <li><button class="btn contact">Contact</button></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="video-bg">
+          <video autoplay muted loop playsinline>
+            <source
+              src="https://tealdrones.com/wp-content/uploads/2023/04/Teal_2_thermal.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="hero-content">
+          <h2>The Future of Short Range Reconnaissance</h2>
+          <p>
+            Teal Drones leads the way in sUAS innovation, providing cutting-edge
+            solutions to the U.S. military and its allies. Manufactured in Salt
+            Lake City, UT, Teal's Blue UAS-approved systems are designed for
+            success in modern operational environments, offering open, modular,
+            and interoperable solutions.
+          </p>
+          <a href="#" class="cta">Explore Black Widow™</a>
+        </div>
+        <div class="hero-image">
+          <img src="./Images/soldeir.png" alt="Drone and Soldier" />
+        </div>
+      </section>
+
+      <!-- Black Widow Section -->
+      <section class="black-widow">
+        <div class="black-widow-content">
+          <div class="black-widow-image">
+            <img
+              src="https://redcat.red/wp-content/uploads/2024/11/blackwidow_scene.png"
+              alt="Black Widow Drone"
+            />
+          </div>
+          <div class="black-widow-text">
+            <h2>
+              Red Cat Announces Production Selection for U.S. Army Short Range
+              Reconnaissance Program
+            </h2>
+            <p>
+              Red Cat’s next generation Teal system will be the Army’s Program
+              of Record SRR sUAS, concluding the rigorous, multi-tranche
+              competitive process
+            </p>
+            <a href="#" class="cta">Watch Video</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Introduction -->
+      <section class="introduction">
+        <div class="intro-content">
+          <div class="intro-header">
+            <h2 class="intro-title">INTRODUCTION</h2>
+            <h1 class="intro-heading">
+              BUILT FOR INTELLIGENCE, SURVEILLANCE, & RECONNAISSANCE
+            </h1>
+          </div>
+          <div class="intro-features">
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./Images/shield.png" alt="Blue sUAS" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Blue sUAS</h3>
+                <p class="feature-description">
+                  American-made sUAS developed under strict design guidelines
+                  that have earned Blue UAS Certification by the U.S. Department
+                  of Defense.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./Images/detective.png" alt="Made in the USA" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Made in the USA</h3>
+                <p class="feature-description">
+                  Teal solutions are a combination of powerful hardware and
+                  software designed, developed, and produced in the USA.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./Images/struggle.png" alt="Rugged" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Rugged</h3>
+                <p class="feature-description">
+                  Designed to be operated in the most challenging of
+                  environments for maximum mission effectiveness.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./Images/location.png" alt="Modular" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Modular</h3>
+                <p class="feature-description">
+                  Vertically integrated and fully modular, payload, propulsion,
+                  and battery systems can be quickly repaired, replaced, and
+                  upgraded.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./Images/signal-tower.png" alt="Modular" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Modular</h3>
+                <p class="feature-description">
+                  Vertically integrated and fully modular, payload, propulsion,
+                  and battery systems can be quickly repaired, replaced, and
+                  upgraded.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">
+                <img src="./Images/arrow.png" alt="Modular" />
+              </div>
+              <div class="feature-content">
+                <h3 class="feature-title">Modular</h3>
+                <p class="feature-description">
+                  Vertically integrated and fully modular, payload, propulsion,
+                  and battery systems can be quickly repaired, replaced, and
+                  upgraded.
+                </p>
+              </div>
+            </div>
+            <a href="#" class="cta">About Teal Drones</a>
+          </div>
+        </div>
+        <div class="intro-image">
+          <img
+            src="https://tealdrones.com/wp-content/uploads/2022/12/2.png"
+            alt="Drone Illustration"
+          />
+        </div>
+      </section>
+
+      <!-- Solutions -->
+      <section class="solutions">
+        <h2>SOLUTIONS</h2>
+        <h3>Actionable Aerial Intelligence</h3>
+
+        <div class="solution-row">
+          <div class="solution-image">
+            <img src="./Images/solutions-img1.jpg" alt="Drone Image" />
+          </div>
+          <div class="solution-text">
+            <h4>AIRCRAFT</h4>
+            <p>
+              Teal’s defense-focused drones offer a low-cost, portable solution
+              designed for rapid deployment in any terrain. Built for field
+              repairability and recoverability, they ensure mission continuity
+              and minimal downtime. Equipped for Intelligence, Surveillance, and
+              Reconnaissance (ISR) missions, they provide real-time data and
+              enhanced operational awareness.
+            </p>
+            <a href="#" class="cta">Explore </a>
+          </div>
+        </div>
+
+        <div class="solution-row reverse">
+          <div class="solution-image">
+            <img src="./Images/solutions-img2.jpg" alt="Drone Image" />
+          </div>
+          <div class="solution-text">
+            <h4>CONTROLLERS</h4>
+            <p>
+              Teal controllers are specifically designed for seamless
+              integration with Teal aircraft, ensuring an exceptional user
+              experience when immediate and accurate visual intelligence is
+              critical. To maximize operational efficiency, the controller’s
+              batteries are swappable with the aircraft, providing continuous
+              power and minimizing downtime in the field.
+            </p>
+            <a href="#" class="cta">Explore</a>
+          </div>
+        </div>
+
+        <div class="solution-row">
+          <div class="solution-image">
+            <img src="./Images/solution-img3.png" alt="Drone Image" />
+          </div>
+          <div class="solution-text">
+            <h4>fUTURES INITIATIVES</h4>
+            <p>
+              We know we are not the best at everything. To accelerate product
+              development, our approach is to partner with other leading
+              companies to bring new capabilities to our technology stack and
+              provide our customers with a solid ecosystem of hardware and
+              software.
+            </p>
+            <a href="#" class="cta">Explore </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column footer-logo">
+            <img src="./Images/logo.png" alt="Teal Logo" />
+            <p>A REDCAT COMPANY</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>SOLUTIONS</h4>
+              <ul>
+                <li><a href="#">Black Widow™</a></li>
+                <li><a href="#">Teal 2</a></li>
+                <li><a href="#">Controllers</a></li>
+                <li><a href="#">Futures Initiative</a></li>
+                <li><a href="#">Use Cases</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>COMPANY</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>RESOURCES</h4>
+              <ul>
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>The Future of Short Range Reconnaissance</p>
+          <p>
+            © 2025 Teal Drones | <a href="#">Terms & Conditions</a> |
+            <a href="#">Privacy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

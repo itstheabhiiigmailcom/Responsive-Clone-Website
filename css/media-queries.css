@@ -1,0 +1,38 @@
+/* media-queries.css */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 1rem;
+    }
+
+    .hero-content p::before {
+        display: none; /* Hide the vertical line */
+    }
+}
+
+@media (max-width: 480px) {
+    .cta {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+}

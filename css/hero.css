@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    color: #fff; /* White text for better visibility */
+    text-align: left; /* Ensure text is left-aligned */
+    height: 100vh; /* Full screen height */
+    overflow: hidden; /* Hide overflow for the video */
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place video behind the content */
+    overflow: hidden;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the section */
+    filter: blur(8px); /* Apply blur effect to the video */
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+.video-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure it sits above the blurred video */
+}
+
+.hero-content {
+    max-width: 50%;
+    z-index: 2; /* Ensure content is above the overlay and video */
+    text-align: left; /* Left-align content */
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 51px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    padding-right: 390px;
+    color: #ffffff;
+    z-index: 2;
+    text-align: left; /* Left-align the heading */
+}
+
+.hero-content p {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    text-align: left; /* Left-align text */
+    font-family: "Raleway", serif;
+    font-style: normal;
+    font-weight: 400px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    z-index: 2;
+}
+
+.hero-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #00b0ff;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hero .cta {
+    display: inline-flex; /* Use flex for aligning text and arrow */
+    align-items: center;
+    gap: 10px; /* Space between text and arrow */
+    padding: 0.5rem 1.5rem;
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    border: 2px solid transparent; /* No border outline initially */
+    border-radius: 5px; /* Rounded corners */
+    position: relative; /* For arrow alignment */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Circle with Arrow */
+.hero .cta::after {
+    content: '➔'; /* Right arrow symbol */
+    font-size: 1.3rem;
+    color: #00b0ff; /* Blue arrow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Circle dimensions */
+    height: 50px;
+    border: 2px solid #fff; /* Blue border for the circle */
+    border-radius: 50%; /* Makes it a circle */
+    margin-left: 10px; /* Space between text and arrow */
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.hero .cta:hover {
+    color: #00b0ff; /* Blue text on hover */
+}
+
+.hero .cta:hover::after {
+    color: #00b0ff; /* Change arrow color to white */
+    border-color: #00b0ff; /* Blue border for the circle */
+}
+
+/* Responsive */
+/* Breakpoint at 1024px */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        gap: 1.5rem;
+        height: auto; /* Remove fixed height */
+        padding: 1.5rem;
+    }
+
+    .hero-content {
+        max-width: 70%; /* Adjust content width */
+        padding: 1rem;
+        text-align: left; /* Ensure text remains left-aligned */
+    }
+
+    .hero h2 {
+        font-size: 2rem; /* Reduce font size */
+        text-align: left; /* Ensure heading remains left-aligned */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        text-align: left; /* Ensure paragraph text remains left-aligned */
+        margin-left: 0; /* Adjust margin */
+        padding-left: 0; /* Adjust padding */
+    }
+
+    .hero-content p::before {
+        display: none; /* Remove decorative line */
+    }
+
+    .hero-image img {
+        width: 80%; /* Reduce image size */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .hero .cta {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem; /* Adjust padding */
+    }
+
+    .hero .cta::after {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem; /* Adjust circle and arrow size */
+    }
+}
+
+/* Breakpoint at 768px */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .hero-content {
+        max-width: 90%; /* Further reduce content width */
+        margin-right: 20px;
+        text-align: left; /* Ensure content remains left-aligned */
+    }
+
+    .hero h2 {
+        font-size: 1.8rem; /* Further reduce font size */
+        text-align: left; /* Ensure heading remains left-aligned */
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.4; /* Adjust line height */
+        text-align: left; /* Ensure paragraph text remains left-aligned */
+    }
+
+    .hero-image img {
+        width: 100%; /* Scale image to full width */
+        margin-top: 15px;
+    }
+
+    .hero .cta {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem; /* Compact button padding */
+    }
+
+    .hero .cta::after {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem; /* Further adjust circle and arrow size */
+    }
+}

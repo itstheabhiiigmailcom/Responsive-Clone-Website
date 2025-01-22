@@ -1,0 +1,213 @@
+/* Footer Styles */
+.footer {
+  background-color: #000; /* Dark background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+  height: 100%; /* Ensures the footer fills the screen */
+  min-height: 80vh; /* Ensures it covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between sections */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex: 1; /* Allow footer-container to take up remaining space */
+}
+
+.footer-column {
+  font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  font-size: 1.4rem;
+  text-align: left;
+  flex: 1; /* Ensure equal width for all columns */
+}
+.footer-column {
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+.footer-logo {
+  flex: 0 1 200px;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  font-weight: normal;
+    line-height: 35px;
+    letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #00b0ff; /* Hover effect color */
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #00b0ff; /* Hover effect color */
+}
+
+.footer-bottom {
+  font-family: "Raleway", serif;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-top: 1px solid #333;
+  padding-top: 10px; /* Reduced gap between footer columns and footer-bottom */
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+  color: #00b0ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-logo,
+  .footer-links {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: block;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+    text-align: center; /* Center the text for mobile */
+  }
+
+  /* Move social media links below the columns on 768px screens */
+  .footer-social {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Ensuring the background extends to fill the height on smaller screens */
+  .footer {
+    min-height: auto; /* Allow it to fill the space as needed */
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Slide from bottom */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px); /* Reduce translation for smaller screens */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Apply the animation to footer elements */
+.footer, 
+.footer-column, 
+.footer-logo, 
+.footer-links, 
+.footer-social, 
+.footer-bottom {
+  animation: fadeIn 0.8s ease-in-out; /* Apply the animation with smooth effect */
+}
+
+/* Add a delay for staggered effect (optional) */
+.footer-column:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.footer-column:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.footer-column:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.footer-column:nth-child(4) {
+  animation-delay: 0.8s;
+}
+

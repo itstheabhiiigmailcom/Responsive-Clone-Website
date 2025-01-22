@@ -1,0 +1,15 @@
+/* reset.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure the body spans the full width */
+    height: 100%; /* Ensure the body spans the full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}

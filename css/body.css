@@ -1,0 +1,23 @@
+/* body.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    scroll-behavior: smooth; /* Smooth scrolling between sections */
+}
+
+section {
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
