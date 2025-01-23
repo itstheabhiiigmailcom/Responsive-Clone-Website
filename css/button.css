@@ -1,0 +1,43 @@
+/* Call-to-Action Button */
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+    font-weight: 25px;
+    letter-spacing: 3px;
+    font-size: 1.4rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    justify-self: end;
+    grid-column: 2;
+    align-self: end;
+}
+
+.cta::after {
+    content: '➔';
+    font-size: 1.3rem;
+    color: #00b0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.cta:hover {
+    color: #00b0ff;
+}
+
+.cta:hover::after {
+    color: #00b0ff;
+    border-color: #00b0ff;
+}
